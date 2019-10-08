@@ -1,3 +1,4 @@
+/* eslint-disable */
 window.__lc = window.__lc || {};
 window.__lc.license = 1056788;
 window.__lc.chat_between_groups = false;
