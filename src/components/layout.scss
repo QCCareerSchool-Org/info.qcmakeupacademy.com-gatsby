@@ -27,3 +27,6 @@ section { padding: 3rem 0 }
 
 ul.no-indent, ol.no-indent { padding-inline-start: 0rem; padding-left: 1rem; }
 ul.sm-indent, ol.sm-indent { padding-inline-start: 0rem; padding-left: 1.5rem; }
+
+.btn.caps { text-transform: uppercase; letter-spacing: 1px }
+.btn.btn-lg.caps { letter-spacing: 2px }
