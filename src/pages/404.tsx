@@ -5,9 +5,9 @@ import { Background } from '../components/background';
 import { Layout } from '../components/layout';
 import { SEO } from '../components/seo';
 
+import { FreeMakeupStarterKit } from '../components/free-makeup-starter-kit';
 import { StartYourCareer } from '../components/start-your-career';
 import Logo from '../images/qcma-logo.svg';
-import { FreeMakeupStarterKit } from '../components/free-makeup-starter-kit';
 
 const NotFoundPage = () => (
   <Layout>

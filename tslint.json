@@ -2,16 +2,22 @@
   "defaultSeverity": "error",
   "extends": [
     "tslint:latest",
-    "tslint-react"
+    "tslint-react",
+    "tslint-eslint-rules"
   ],
   "jsRules": {},
   "rules": {
     "interface-name": false,
+    "linebreak-style": [true, "LF"],
+    "max-line-length": [true, 360],
+    "object-literal-sort-keys": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "space-within-parens": [true, "never"],
+    "space-before-function-paren": [true, {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
     "jsx-no-multiline-js": false,
     "jsx-no-lambda": false,
-    "max-line-length": [true, 160],
-    "object-literal-sort-keys": false,
-    "quotemark": [true, "single", "jsx-double"]
+    "object-curly-spacing": [ true, "always" ],
+    "array-bracket-spacing": [ true, "always" ]
   },
   "rulesDirectory": []
 }

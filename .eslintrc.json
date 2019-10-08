@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "google"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "array-bracket-spacing": [2, "always"],
+        "max-len": [1, 360],
+        "object-curly-spacing": [2, "always" ],
+        "indent": [2, 2],
+        "space-before-function-paren": [2, {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
+        "space-in-parens": [2, "never"],
+        "require-jsdoc": [0]
+     }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable */
 if (!window.fetch) {
   activeCampaignTracking();
 } else {
@@ -17,6 +18,7 @@ if (!window.fetch) {
     activeCampaignTracking();
   });
 }
+
 function activeCampaignTracking() {
   // Set to false if opt-in required
   var trackByDefault = true;

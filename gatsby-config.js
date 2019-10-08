@@ -37,12 +37,12 @@ module.exports = {
         fonts: [
           {
             family: `Playfair Display`,
-            variants: [`400`, `500`],
+            variants: [ `400`, `500` ],
             // subsets: [`latin`],
           },
           {
             family: `Open Sans`,
-            variants: [`300`, `500`, `700`]
+            variants: [ `300`, `500`, `700` ],
           },
         ],
       },
@@ -69,7 +69,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
-}
+};
 
 // export const onClientEntry = () => {
 //   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
