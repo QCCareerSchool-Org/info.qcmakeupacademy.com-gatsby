@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { Background } from '../components/background';
 import { Form } from '../components/form';
@@ -10,12 +10,12 @@ import { SEO } from '../components/seo';
 import { StartYourCareer } from '../components/start-your-career';
 import { StudentQuote } from '../components/student-quote';
 
-import { useScreenWidth } from '../hooks/use-screen-width';
+import { ScreenWidthContext } from '../providers/screen-width';
 
 import Logo from '../images/qcma-logo.svg';
 
 const CatalogLearnMakeupOnline = () => {
-  const screenWidth = useScreenWidth();
+  const screenWidth = useContext(ScreenWidthContext);
   const desktop = screenWidth >= 992;
 
   return (
