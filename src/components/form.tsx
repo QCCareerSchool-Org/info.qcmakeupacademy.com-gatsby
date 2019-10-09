@@ -5,7 +5,7 @@ interface Props {
   buttonText?: string;
 }
 
-export const Form: React.FC<Props> = ({ formId = 1, buttonText = 'Get the Catalog' }) => {\
+export const Form: React.FC<Props> = ({ formId = 1, buttonText = 'Get the Catalog' }) => {
   const seconds = Math.floor(new Date().getTime() / 1000);
   const rand = Math.floor(Math.random() * 1048576);
   const unique = seconds.toString(16).toUpperCase() + rand.toString(16).toUpperCase();
