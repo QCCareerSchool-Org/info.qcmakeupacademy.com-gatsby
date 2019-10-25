@@ -18,6 +18,9 @@ const CatalogBecomeProMakeupArtist: React.FC = () => {
   const screenWidth = useContext(ScreenWidthContext);
   const desktop = screenWidth >= 992;
 
+  const backgroundImage = desktop ? 'makeupArtistWorkingOnModel' : 'applyingLipGloss';
+  const backgroundStyle: React.CSSProperties = desktop ? { backgroundPosition: '100% 0%' } : { backgroundPosition: '0% 0%' };
+
   return (
     <Layout>
       <SEO
@@ -26,8 +29,8 @@ const CatalogBecomeProMakeupArtist: React.FC = () => {
       />
 
       <Background
-        image="applyingLipGloss"
-        style={{ backgroundPosition: '0% 0%' }}
+        image={backgroundImage}
+        style={backgroundStyle}
         className="text-white"
       >
         <section id="catalog-form">

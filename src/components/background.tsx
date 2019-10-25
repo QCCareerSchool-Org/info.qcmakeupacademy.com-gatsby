@@ -13,6 +13,13 @@ export const Background: React.FC<Props> = ({ children, style, className, image 
   <StaticQuery
     query={graphql`
       query {
+        desktopLearnOnline: file(relativePath: { eq: "backgrounds/desktop-learn-online.jpg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
         applyingLipGloss: file(relativePath: { eq: "backgrounds/applying-lip-gloss.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
