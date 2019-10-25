@@ -2,7 +2,7 @@
   "name": "info-qcmakeupacademy-com",
   "private": true,
   "description": "QC Makeup Academy landing pages",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "QC Career School <administrator@qccareerschool.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
