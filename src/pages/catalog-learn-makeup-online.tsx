@@ -18,6 +18,9 @@ const CatalogLearnMakeupOnline = () => {
   const screenWidth = useContext(ScreenWidthContext);
   const desktop = screenWidth >= 992;
 
+  const backgroundImage = desktop ? 'desktopLearnOnline' : 'faceWithGoldEyeShadow';
+  const backgroundStyle: React.CSSProperties = desktop ? { backgroundPosition: '75% 50%' } : { backgroundPosition: '50% 0%' };
+
   return (
     <Layout>
       <SEO
@@ -25,7 +28,7 @@ const CatalogLearnMakeupOnline = () => {
         description="Download a free course catalaog from the top makeup academy"
       />
 
-      <Background image="faceWithGoldEyeShadow" style={{ backgroundPosition: '50% 0%' }} className="text-white">
+      <Background image={backgroundImage} style={backgroundStyle} className="text-white">
         <section id="catalog-form">
           <div className="container">
             <div className="text-center">
