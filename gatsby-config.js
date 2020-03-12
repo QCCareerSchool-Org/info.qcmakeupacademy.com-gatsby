@@ -56,6 +56,7 @@ module.exports = {
         ],
         gtagConfig: {
           site_speed_sample_rate: 100,
+          optimize_id: 'GTM-5BPH5PS',
         },
       },
     },
