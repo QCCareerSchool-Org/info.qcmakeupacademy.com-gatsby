@@ -75,50 +75,14 @@ module.exports = {
     {
       resovle: `gatsby-plugin-offline`,
       options: {
+        // Don't cache cypress files in __ folder
         workboxConfig: {
-          // importWorkboxFrom: `local`,
-          // globDirectory: rootDir,
-          // globPatterns,
-          // modifyURLPrefix: {
-          //   // If `pathPrefix` is configured by user, we should replace
-          //   // the default prefix with `pathPrefix`.
-          //   '/': `${pathPrefix}/`,
-          // },
-          // cacheId: `gatsby-plugin-offline`,
-          // // Don't cache-bust JS or CSS files, and anything in the static directory,
-          // // since these files have unique URLs and their contents will never change
-          // dontCacheBustURLsMatching: /(\.js$|\.css$|static\/)/,
           runtimeCaching: [
             {
-              // Don't cache cypress files in __ folder
               urlPattern: /^https?:.*\/__\/.*/,
               handler: `NetworkOnly`,
             },
-            {
-              // Use cacheFirst since these don't need to be revalidated (same RegExp
-              // and same reason as above)
-              urlPattern: /(\.js$|\.css$|static\/)/,
-              handler: `CacheFirst`,
-            },
-            {
-              // page-data.json files, static query results and app-data.json
-              // are not content hashed
-              urlPattern: /^https?:.*\/page-data\/.*\.json/,
-              handler: `StaleWhileRevalidate`,
-            },
-            {
-              // Add runtime caching of various other page resources
-              urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-              handler: `StaleWhileRevalidate`,
-            },
-            {
-              // Google Fonts CSS (doesn't end in .css so we need to specify it)
-              urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-              handler: `StaleWhileRevalidate`,
-            },
           ],
-          // skipWaiting: true,
-          // clientsClaim: true,
         },
       },
     },
