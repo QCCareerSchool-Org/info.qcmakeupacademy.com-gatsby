@@ -71,14 +71,20 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        // Don't cache cypress files in /__ or /__cypress folders
+        workboxConfig: {
+          runtimeCaching: [
+            {
+              urlPattern: /^https?:.*\/__(cypress)?\//, // this will also match https://example.com/some/other/dir/__
+              handler: `NetworkOnly`,
+            },
+          ],
+        },
+      },
+    },
   ],
 };
-
-// export const onClientEntry = () => {
-//   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
-//   if (typeof window.IntersectionObserver === `undefined`) {
-//     import(`intersection-observer`)
-//     console.log(`# IntersectionObserver is polyfilled!`)
-//   }
-// }
