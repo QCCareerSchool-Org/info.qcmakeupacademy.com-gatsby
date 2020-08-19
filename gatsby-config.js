@@ -73,13 +73,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resovle: `gatsby-plugin-offline`,
+      resolve: `gatsby-plugin-offline`,
       options: {
         // Don't cache cypress files in __ folder
         workboxConfig: {
           runtimeCaching: [
             {
-              urlPattern: /^https?:.*\/__\/.*/,
+              urlPattern: /^https?:.*\/__\//,
               handler: `NetworkOnly`,
             },
           ],
