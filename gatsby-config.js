@@ -79,7 +79,7 @@ module.exports = {
         workboxConfig: {
           runtimeCaching: [
             {
-              urlPattern: /^https?:.*\/__\//,
+              urlPattern: /^https?:.*\/__(cypress)?\//,
               handler: `NetworkOnly`,
             },
           ],
