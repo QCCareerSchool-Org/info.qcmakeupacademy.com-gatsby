@@ -25,7 +25,6 @@
     "gatsby-plugin-sass": "^4.10.0",
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-plugin-tslint": "0.0.2",
-    "gatsby-plugin-typescript": "^3.10.0",
     "gatsby-plugin-webfonts": "^2.1.1",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-transformer-sharp": "^3.10.0",
