@@ -2,7 +2,7 @@
   "name": "info-qcmakeupacademy-com",
   "private": true,
   "description": "QC Makeup Academy landing pages",
-  "version": "1.3.5",
+  "version": "1.4.0",
   "author": "QC Career School <administrator@qccareerschool.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -46,12 +46,6 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.20.6",
     "prettier": "^2.0.5",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-eslint-rules": "^5.4.0",
-    "tslint-loader": "^3.5.4",
-    "tslint-plugin-prettier": "^2.3.0",
-    "tslint-react": "^5.0.0",
     "typescript": "^3.9.7"
   },
   "keywords": [
