@@ -19,7 +19,6 @@
     "gatsby-plugin-facebook-pixel": "^1.0.8",
     "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-manifest": "^3.10.0",
-    "gatsby-plugin-offline": "^4.10.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^4.10.0",
     "gatsby-plugin-sass": "^4.10.0",
@@ -38,6 +37,7 @@
     "reaptcha": "^1.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.8",
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.1.0",
