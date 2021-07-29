@@ -44,7 +44,7 @@ const CatalogLearnMakeupOnline = () => {
                     <div className="card p-4 text-dark">
                       <div className="p-sm-4">
                         <h5 className="text-center mb-4">Get Started with a Free Course Catalog</h5>
-                        <Form />
+                        <Form recaptcha="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
                       </div>
                     </div>
                   </div>
@@ -67,7 +67,7 @@ const CatalogLearnMakeupOnline = () => {
                     <div className="card p-4 text-dark">
                       <div className="p-sm-4">
                         <h5 className="text-center mb-4">Get Started with a Free Course Catalog</h5>
-                        <Form />
+                        <Form recaptcha="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
                       </div>
                     </div>
                   </div>

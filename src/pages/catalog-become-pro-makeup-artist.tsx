@@ -49,7 +49,7 @@ const CatalogBecomeProMakeupArtist: React.FC = () => {
                       <div className="card-body">
                         <div className="p-3">
                           <h2 className="h5 text-left mb-4">Get Started with a Free Course Catalog</h2>
-                          <Form formId={2} />
+                          <Form recaptcha="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
                         </div>
                       </div>
                     </div>
@@ -73,7 +73,7 @@ const CatalogBecomeProMakeupArtist: React.FC = () => {
                       <div className="card-body">
                         <div className="p-sm-3">
                           <h2 className="h5 text-center mb-4">Get Started with a Free Course Catalog</h2>
-                          <Form formId={1} />
+                          <Form recaptcha="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
                         </div>
                       </div>
                     </div>
