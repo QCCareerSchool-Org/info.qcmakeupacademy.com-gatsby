@@ -14,7 +14,7 @@
     "bootstrap": "^4.5.2",
     "gatsby": "^3.10.2",
     "gatsby-background-image": "^1.5.3",
-    "gatsby-cli": "^2.12.87",
+    "gatsby-cli": "^3.10.0",
     "gatsby-image": "^3.10.0",
     "gatsby-plugin-facebook-pixel": "^1.0.8",
     "gatsby-plugin-google-gtag": "^3.10.0",
